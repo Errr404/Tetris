@@ -1,8 +1,8 @@
 <?php
 session_start();
 include '../controller/conect.php';
-//include  'user.class.php';
-
+/
+   
     $send = filter_input(INPUT_POST, 'SendPlayer');
     if($send){
         $nome = filter_input(INPUT_POST, 'nome');
