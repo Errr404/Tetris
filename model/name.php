@@ -1,7 +1,7 @@
 <?php
 session_start();
 include '../controller/conect.php';
-/
+
    
     $send = filter_input(INPUT_POST, 'SendPlayer');
     if($send){
