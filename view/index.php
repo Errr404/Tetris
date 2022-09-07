@@ -24,19 +24,14 @@
     </style>
 
 <body>
-<?php 
-        if(isset($_SESSION['play'])){
-            echo $_SESSION['play'];
-            unset($_SESSION['play']);   
-        }
-    ?>
+
     <div class="container row mt-5">
         <h1>Olá, </h1>
         <h2>bem vindo<h2>
                 <form method="POST" action="#" class="col-auto row g-3">
                     <div class="col-auto">
                         <label for="inputPassword2" class="visually-hidden">Name</label>
-                        <input type="text" class="form-control"  name="nome" placeholder="Nome">
+                        <input type="text" class="form-control"  name="name" placeholder="Nome">
                     </div>
                     <div class="col-auto">
                         <input type="submit" name="SendPlayer" class="btn btn-primary mb-3" value="Confirmar">

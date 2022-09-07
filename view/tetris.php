@@ -49,13 +49,10 @@
     <div>
         <P>
             name: <span = id="name">
-                    <?php
-
-                        include '../model/name.php';
-
-    
-                    ?>
-
+                   <?php 
+                    include_once '../model/name.php';
+                    echo ($_SESSION['player']);
+                   ?>
             </span>
         </P>
         <p>

@@ -2,10 +2,13 @@
 session_start();
 include '../controller/conect.php';
 
-   
-    $send = filter_input(INPUT_POST, 'SendPlayer');
+$send = filter_input(INPUT_POST, 'SendPlayer');
+
+
     if($send){
-        $nome = filter_input(INPUT_POST, 'nome');
+        $nome = filter_input(INPUT_POST, 'name');
+
+        $_SESSION['player'] = $nome;
 
         $insert = "INSERT INTO tb_player(player_nick) VALUES (:nick)";
 
@@ -21,3 +24,5 @@ include '../controller/conect.php';
         header('location: index.php');
         }
     }
+
+   
